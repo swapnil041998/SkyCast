@@ -59,7 +59,7 @@ cd skycast
 npm install
 npm run dev
 
-#🏗️ **Architecture**
+## 🏗️ Architecture
 src/
 ├── components/     Header, SearchBar, CurrentWeather, WeatherBackdrop,
 │                   WeatherSummary, PlanYourDay, HourlyForecast,
