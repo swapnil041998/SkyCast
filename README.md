@@ -58,3 +58,16 @@ git clone https://github.com/<you>/skycast.git
 cd skycast
 npm install
 npm run dev
+
+🏗️ Architecture
+src/
+├── components/     Header, SearchBar, CurrentWeather, WeatherBackdrop,
+│                   WeatherSummary, PlanYourDay, HourlyForecast,
+│                   TemperatureChart, WeeklyForecast, WeatherDetails,
+│                   FavouriteCities, Controls, States
+├── services/       weatherApi.ts        (all network calls + typed errors)
+├── utils/          weatherCodes.ts      (WMO code → label/icon/sky mapping)
+│                   units.ts             (temp/wind/precip/time conversion)
+├── hooks/          useWeather (cached + abortable), useLocalStorage,
+│                   useDebouncedValue
+└── types/          weather.ts
